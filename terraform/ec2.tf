@@ -74,7 +74,7 @@ resource "aws_instance" "testinstance" {
   instance_type   = var.instance_type 
   key_name        = aws_key_pair.deployer.key_name
   security_groups = [aws_security_group.allow_user_to_connect.name]
-  user_data = file("${path.module}/install_tools.sh")
+  user_data = file("${path.module}/install_tools.sh") #${path.module}: This is a built-in Terraform variable that refers to the directory where the current module’s .tf files are located. This makes the path to the script relative and portable, no matter where the module is used from.
   tags = {
     Name = "Jenkins-Automate"
   }
