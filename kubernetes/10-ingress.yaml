@@ -6,14 +6,14 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/proxy-body-size: "50m"
     kubernetes.io/ingress.class: "nginx"
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
-  tls:
-  - hosts:
-    - ecommshop.mehullab.shop
-    secretName: easyshop-tls-secret  # Cert-Manager will manage this
+  #tls:
+  #- hosts:
+  #  - ecommshop.mehullab.shop
+  #  secretName: easyshop-tls-secret  # Cert-Manager will manage this
   rules:
-  - host: ecommshop.mehullab.shop
+  - host: aa848c2e8fdc243e0b5dbdfb947bf09d-664994763.us-east-2.elb.amazonaws.com
     http:
       paths:
       - path: /
