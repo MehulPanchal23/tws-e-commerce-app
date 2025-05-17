@@ -1,4 +1,4 @@
-import ContactForm from "@/components/forms/ContactForm";
+limport ContactForm from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
@@ -19,18 +19,18 @@ const ContactPage = () => {
           <div>
             <h4 className="font-semibold mb-1">Address</h4>
             <p className="text-sm text-muted-foreground">
-              Bihar, India
+              Vapi, India
             </p>
           </div>
 
           <div className="mt-4">
             <h4 className="font-semibold mb-1">Phone</h4>
-            <p className="text-sm text-muted-foreground">+91 9400344657</p>
+            <p className="text-sm text-muted-foreground">+91 1234567891</p>
           </div>
 
           <div className="mt-4">
             <h4 className="font-semibold mb-1">Email Address</h4>
-            <p className="text-sm text-muted-foreground">iemafzalhassan@gmail.com</p>
+            <p className="text-sm text-muted-foreground">PanchalMehul1919191@gmail.com</p>
           </div>
           <div className="mt-4">
             <h3 className="font-semibold">Follow Me</h3>
