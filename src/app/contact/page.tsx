@@ -1,4 +1,4 @@
-limport ContactForm from "@/components/forms/ContactForm";
+import ContactForm from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
